@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&J Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .navbar, .btn-primary, footer {
+            background-color: #ff0000;
+            border: none;
+        }
+
+        .navbar-brand, .nav-link, .btn-primary, footer {
+            color: #ffffff !important;
+        }
+
+        .banner {
+            width: 100%;
+            height: 70vh;
+            background: url('imagenes/banner1.png') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .carousel-inner img {
+            border-radius: 10px;
+        }
+
+        .table-container {
+            margin: 40px auto;
+            width: 90%;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        .table th, .table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .video-container video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .form-control {
+            background-color: #222;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff3333;
+        }
+
+        footer {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">INICIO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="pagina1.html">RUTINAS</a></li>
+                <li class="nav-item"><a class="nav-link" href="pagina2.html">PRECIOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="pagina3.html">ALIMENTACION</a></li>
+                <li class="nav-item"><a class="nav-link" href="pagina4.html">SUPLEMENTOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="pedidos.html">PEDIDOS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <h1></h1>
+    </div>
+
+<div class="container mt-5">
+        <h2 class="text-center">Contáctanos</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Tu Correo">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+    </div>
+
+    <div class="table-container">
+        <h2 class="text-center">Planes Disponibles</h2>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Costo</th>
+                    <th>Duracion</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Visita</td>
+                    <td>$100</td>
+                    <td>1 dia</td>
+                    <td>Acceso a todas las maquinas durante 1 dias naturales</td>
+                </tr>
+                <tr>
+                    <td>Semanal</td>
+                    <td>$250</td>
+                    <td>7 dias</td>
+                    <td>Acceso a todas las maquinas durante 7 dias naturales</td>
+                </tr>
+                <tr>
+                    <td>Mensual</td>
+                    <td>$650</td>
+                    <td>30 dias</td>
+                    <td>Acceso a todas las maquinas durante 30 dias naturales</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practica 4 - Biografia</title>
+        <link rel="stylesheet" href="CSS/estilos.css">
+    </head>
+    
+    <body>
+        <div class="cuerpo">
+         <header>
+
+            </header>
+            <main>
+                <div class="foto">
+                    <img src="imagenes/goku22.jpg" alt="Photo">
+                </div>
+                <div class="texto">
+                    <h2>Nuestras otras redes sociales</h2>
+                    <h5>Somos una empresa de gimnasios en todo mexico, por lo tanto te invitamos a seguirnos en nuestras redes sociales, para que mires nuevas promociones..</h5>
+                </div>
+
+                <div class="centrado">
+                    <table border="0">
+                      <tr>
+                          <td>
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiD-Jyx-v6MA
+                            xUOLEQIHeMcCVgQFnoECAoQAQ&url=https%3A%2F%2Fwww.youtube.com%2F&usg=AOvVaw0usXxGa_x5y1xoI_LaL0-1&opi=89978449">
+                            <img width="130px" src="Imagenes/youtube.png" alt="YouTube"></a>
+                          </td>
+                          <td width="100px"></td>
+                          <td>
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi0ocvlhv-MA
+                            xWtLEQIHV_ZLVMQFnoECB0QAQ&url=https%3A%2F%2Fwww.facebook.com%2F&usg=AOvVaw2q27ov2cpCynr72DmuSqEz&opi=89978449">
+                            <img width="110px" src="Imagenes/face.png" alt="Facebook"></a>
+                          </td>
+                          <td width="100px"></td>
+                          <td>
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiv5NqRh_-MA
+                            xVbEUQIHWtfCQ0QFnoECAoQAQ&url=https%3A%2F%2Fwww.instagram.com%2F&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm&opi=89978449">
+                            <img width="100px" src="Imagenes/insta.png" alt="instagram"></a>
+                          </td>
+                          <td width="100px"></td>
+                          <td>
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjGgLOfh_-MAxWCl-4BHTk5DV0QF
+                            noECAoQAQ&url=https%3A%2F%2Fx.com%2F%3Flang%3Des&usg=AOvVaw1N8-ZQhZxcJ7ZB5iCM4SZh&opi=89978449">
+                            <img width="140px" src="Imagenes/x1.png" alt="twitter"></a>
+                          </td>
+                      </tr>
+                    </table>
+                    </div>
+
+            </main>
+
+           
+    </body>
+
+
+
+    <div>
+        <iframe width="100%" height="890px"
+        src="https://www.youtube.com/embed/svcYOAY7WZs?autoplay=1&loop=1&playlist=svcYOAY7WZs&mute=1"
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        </div>
+
+    <footer>
+        <p>© 2025 D&J Fitness - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

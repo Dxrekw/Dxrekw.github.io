@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentacion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .navbar, .btn-primary, footer {
+            background-color: #ff0000;
+            border: none;
+        }
+
+        .navbar-brand, .nav-link, .btn-primary, footer {
+            color: #ffffff !important;
+        }
+
+        .banner {
+            width: 100%;
+            height: 70vh;
+            background: url('imagenes/banner4.png') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .carousel-inner img {
+            border-radius: 10px;
+        }
+
+        .table-container {
+            margin: 40px auto;
+            width: 90%;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        .table th, .table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .video-container video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff3333;
+        }
+
+        footer {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">INICIO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="pagina1.html">RUTINAS</a></li>
+                <li class="nav-item"><a class="nav-link" href="pagina2.html">PRECIOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="pagina3.html">ALIMENTACIÓN</a></li>
+                <li class="nav-item"><a class="nav-link" href="pagina4.html">SUPLEMENTOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="pedidos.html">PEDIDOS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <h1></h1>
+    </div>
+
+    <div>
+        <iframe width="100%" height="950px"
+        src="https://www.youtube.com/embed/_Q4zAMHJzKY?autoplay=1&loop=1&playlist=_Q4zAMHJzKY&mute=1"
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        </div>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cuadro con Bordes</title>
+        <style>
+            .cuadro {
+                width: 90%; 
+                padding: 40px;
+                background-color: rgb(37, 37, 37); 
+                border: 10px dashed rgb(177, 177, 177); 
+                border-radius: 10%;
+                margin: 50px auto; 
+            }
+            .cuadro h1 {
+                margin: 0;
+                font-size: 28px;
+            }
+            .cuadro p {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="cuadro">
+            <h1>Alimentación y Nutrición</h1>
+            <p>
+                El entrenamiento es solo una parte del proceso; la alimentación es clave para lograr tus objetivos. En D&J Fitness, te proporcionamos guías nutricionales diseñadas para maximizar tu rendimiento, mejorar tu recuperación y ayudarte a alcanzar la mejor versión de ti mismo. Ya sea que busques ganar masa muscular, perder grasa o simplemente mantenerte en forma, aquí encontrarás los consejos y planes adecuados para ti.</p>
+        </div>
+    
+    </body>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Registra tus Objetivos Fisicos</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico (@ = Alt + 64)</label>
+                <input type="email" class="form-control" id="email" placeholder="Tu Correo">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Objetivos Fisicos</label>
+                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+    </div>
+    <div class="table-container">
+        <h2 class="text-center">Consulta tu Plan de alimentacion</h2>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Costo</th>
+                    <th>Vegano</th>
+                    <th>Carnivoro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>VerdurasRed</td>
+                    <td>$100</td>
+                    <td>Si</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>RedBeef</td>
+                    <td>$280</td>
+                    <td>No</td>
+                    <td>Si</td>
+                </tr>
+                <tr>
+                    <td>Mixto</td>
+                    <td>$600</td>
+                    <td>No</td>
+                    <td>Si</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="imagen-container text-center">
+        
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/train22.jpg" class="d-block w-100" alt="Rutina 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/train5.jpg" class="d-block w-100" alt="Rutina 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/train4.jpg" class="d-block w-100" alt="Rutina 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+   
+    <div>
+        <iframe width="100%" height="890px"
+        src="https://www.youtube.com/embed/HqF_RO2tRM?autoplay=1&loop=1&playlist=HqF-_RO2tRM&mute=1"
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        </div>
+
+    <div class="table-container">
+        <h2 class="text-center">Nutriologos Recomendados</h2>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Duración</th>
+                    <th>Confiabilidad</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jorge Luis</td>
+                    <td>4 Semanas</td>
+                    <td>10%</td>
+                    <td>Buen Nutriologo aveces roba dinero</td>
+                </tr>
+                <tr>
+                    <td>Kenneth Osbel</td>
+                    <td>6 Semanas</td>
+                    <td>70%</td>
+                    <td>Atento pero no contesta llamadas</td>
+                </tr>
+                <tr>
+                    <td>Raymundo Diaz</td>
+                    <td>3 Semanas</td>
+                    <td>101%</td>
+                    <td>Buen Nutriologo hasta regala donitas</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>© 2025 D&J Fitness - Todos los derechos reservados</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+    

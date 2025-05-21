@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .navbar, .btn-primary, footer {
+            background-color: #ff0000;
+            border: none;
+        }
+
+        .navbar-brand, .nav-link, .btn-primary, footer {
+            color: #ffffff !important;
+        }
+
+        .banner {
+            width: 100%;
+            height: 70vh;
+            background: url('imagenes/banner3.png') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .carousel-inner img {
+            border-radius: 10px;
+        }
+
+        .table-container {
+            margin: 40px auto;
+            width: 90%;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        .table th, .table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .video-container video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff3333;
+        }
+
+        footer {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">INICIO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="pagina1.html">RUTINAS</a></li>
+                <li class="nav-item"><a class="nav-link" href="pagina2.html">PRECIOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="pagina3.html">ALIMENTACIÓN</a></li>
+                <li class="nav-item"><a class="nav-link" href="pagina4.html">SUPLEMENTOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="pedidos.html">PEDIDOS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <h1></h1>
+    </div>
+    <div class="table-container">
+        <h2 class="text-center">Planes Disponibles</h2>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Costo</th>
+                    <th>Duracion</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Visita</td>
+                    <td>$100</td>
+                    <td>1 dia</td>
+                    <td>Acceso a todas las maquinas durante 1 dias naturales</td>
+                </tr>
+                <tr>
+                    <td>Semanal</td>
+                    <td>$250</td>
+                    <td>7 dias</td>
+                    <td>Acceso a todas las maquinas durante 7 dias naturales</td>
+                </tr>
+                <tr>
+                    <td>Mensual</td>
+                    <td>$650</td>
+                    <td>30 dias</td>
+                    <td>Acceso a todas las maquinas durante 30 dias naturales</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <iframe width="100%" height="890" 
+    src="https://www.youtube.com/embed/4uB6W22oPIo?autoplay=1&loop=1&playlist=4uB6W22oPIo&mute=1" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+</iframe>
+
+<div class="imagen-container text-center">
+    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/ejercicio.jpg" class="d-block w-100" alt="Rutina 1">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/man.jpg" class="d-block w-100" alt="Rutina 2">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/gimnasio.jpg" class="d-block w-100" alt="Rutina 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadro con Bordes</title>
+    <style>
+        .cuadro {
+            width: 90%; 
+            padding: 40px;
+            background-color: rgb(2, 4, 45); 
+            border: 5px dashed rgb(255, 255, 255); 
+            border-radius: 10%;
+            margin: 50px auto; 
+        }
+        .cuadro h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .cuadro p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cuadro">
+        <h1>Planes y Precios</h1>
+        <p>
+            En D&J Fitness, creemos que el fitness debe ser accesible para todos. Por eso, ofrecemos planes diseñados para adaptarse a diferentes objetivos y niveles de entrenamiento. Ya sea que busques mejorar tu condición física, ganar músculo o definir tu cuerpo, tenemos la opción ideal para ti.</p>
+    </div>
+
+</body>
+
+<iframe width="100%" height="890" 
+    src="https://www.youtube.com/embed/xwk0sZ5WXRA?autoplay=1&loop=1&playlist=xwk0sZ5WXRA&mute=1" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+</iframe>
+
+    <div class="table-container">
+        <h2 class="text-center">Horarios Disponibles</h2>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sabado</th>
+                    <th>Domingo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>4:00 AM - 12:00 PM</th>
+                    <th>4:00 AM - 12:00 PM</th>
+                    <th>4:00 AM - 12:00 PM</th>
+                    <th>4:00 AM - 12:00 PM</th>
+                    <th>4:00 AM - 12:00 PM</th>
+                    <th>6:00 AM - 10:00 PM</th>
+                    <th>CERRADO</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cuadro con Bordes</title>
+        <style>
+            .cuadro {
+                width: 90%; 
+                padding: 40px;
+                background-color: rgb(0, 0, 0); 
+                border: 5px dashed rgb(255, 0, 0); 
+                border-radius: 0%;
+                margin: 50px auto; 
+            }
+            .cuadro h1 {
+                margin: 0;
+                font-size: 28px;
+                color: red;
+            }
+            .cuadro p {
+                font-size: 20px;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="cuadro">
+            <h1>Porque elegirnos</h1>
+            <p>
+                En D&J Fitness, creemos que contamos con gran variedad de maquinas y de buena calidad, somos de costo accesible a comparacion de otros gimnasios con los mismos o peores recursos. por eso pensamos que si tienes poco presupuesto; este seria tu mejor opcion Costo-Beneficio.
+    
+    </body>
+
+    <div class="imagen-container text-center">
+        
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/lagartija.jpg" class="d-block w-100" alt="Rutina 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/maquinas.jpeg" class="d-block w-100" alt="Rutina 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/entrenamiento.jpg" class="d-block w-100" alt="Rutina 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="video-container text-center mt-5">
+        <h2></h2>
+        <iframe width="100%" height="890" 
+        src="https://www.youtube.com/embed/4VyNJFm0-aM?autoplay=1&loop=1&playlist=4VyNJFm0-aM&mute=1" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+
+    <footer>
+        <p>© 2025 D&J Fitness - Todos los derechos reservados</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
